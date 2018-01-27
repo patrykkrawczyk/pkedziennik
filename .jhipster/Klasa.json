@@ -1,0 +1,20 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "nazwa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "srednia",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180127153823",
+    "entityTableName": "klasa",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

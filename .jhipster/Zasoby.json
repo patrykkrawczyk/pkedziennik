@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "nazwa",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sala",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ilosc",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180127153825",
+    "entityTableName": "zasoby",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

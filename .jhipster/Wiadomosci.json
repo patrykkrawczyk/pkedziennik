@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "odkiedy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dokiedy",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tresc",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180127153827",
+    "entityTableName": "wiadomosci",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

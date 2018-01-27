@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "numer",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "zasoby",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "przedmioty",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180127153824",
+    "entityTableName": "sala",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

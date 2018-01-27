@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "imie",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nazwisko",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pesel",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telefon",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180127153826",
+    "entityTableName": "nauczyciele",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

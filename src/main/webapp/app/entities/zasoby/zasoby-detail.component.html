@@ -1,0 +1,34 @@
+
+<div *ngIf="zasoby">
+    <h2><span>Zasoby</span> {{zasoby.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span>Nazwa</span></dt>
+        <dd>
+            <span>{{zasoby.nazwa}}</span>
+        </dd>
+        <dt><span>Sala</span></dt>
+        <dd>
+            <span>{{zasoby.sala}}</span>
+        </dd>
+        <dt><span>Ilosc</span></dt>
+        <dd>
+            <span>{{zasoby.ilosc}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'zasoby/'+ zasoby.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span> Edit</span>
+    </button>
+</div>

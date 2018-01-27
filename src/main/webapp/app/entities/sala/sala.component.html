@@ -1,0 +1,62 @@
+<div>
+    <h2>
+        <span>Sala</span>
+        <button class="btn btn-primary float-right jh-create-entity create-sala" [routerLink]="['/', { outlets: { popup: ['sala-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span >
+            Create new Sala
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="salas">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span>ID</span></th>
+            <th><span>Numer</span></th>
+            <th><span>Zasoby</span></th>
+            <th><span>Przedmioty</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let sala of salas ;trackBy: trackId">
+                <td><a [routerLink]="['../sala', sala.id ]">{{sala.id}}</a></td>
+                <td>{{sala.numer}}</td>
+                <td>{{sala.zasoby}}</td>
+                <td>{{sala.przedmioty}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../sala', sala.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'sala/'+ sala.id + '/edit'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'sala/'+ sala.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
