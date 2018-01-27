@@ -1,0 +1,36 @@
+entity Uczen {
+	imie String
+    nazwisko String
+    klasa String
+}
+
+entity Klasa {
+	nazwa String
+	srednia String
+}
+
+entity Sala {
+	numer String
+    zasoby String
+    przedmioty String
+}
+
+entity Zasoby {
+	nazwa String
+	sala String
+	ilosc String
+}
+
+entity Nauczyciele {
+	imie String
+    nazwisko String
+    pesel String
+    telefon String
+}
+
+entity Wiadomosci {
+	od String
+    do String
+    tresc String
+}
+
