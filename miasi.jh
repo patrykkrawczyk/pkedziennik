@@ -29,8 +29,8 @@ entity Nauczyciele {
 }
 
 entity Wiadomosci {
-	od String
-    do String
+	odkiedy String
+    dokiedy String
     tresc String
 }
 
